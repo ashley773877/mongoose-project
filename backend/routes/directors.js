@@ -1,5 +1,5 @@
 import { Router } from "express";
-import Genre from '../models/Director.js'
+import Director from '../models/Director.js'
 
 
 const DirectorRouter = new Router();
