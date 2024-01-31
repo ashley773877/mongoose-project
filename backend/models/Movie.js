@@ -6,24 +6,13 @@ const movieSchema = new mongoose.Schema({
         type: String, 
        required: true
     },
-    release: {
+    releaseDate: {
         type: Date,
         required: true
     },
     duration: {
         type: Number,
         required: true
-    },
-    director: {
-        type: mongoose.Schema.Types.ObjectId,
-        ref: 'Director',
-        required: true
-        
-    },
-    genres: {
-        type: mongoose.Schema.Types.ObjectId,
-        ref: 'Genre'
-
     },
 
 });

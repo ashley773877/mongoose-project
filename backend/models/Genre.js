@@ -3,10 +3,16 @@ import mongoose from 'mongoose';
 
 
 const genreSchema = new mongoose.Schema({
-    name: {
-        type: String,
+
+    genre_id: {
+        type: mongoose.Schema.ObjectId,
+        ref: "genre",
         required: true
     },
+    genre: {
+        type: String,
+        required: true 
+    }
 
 });
 

@@ -1,10 +1,16 @@
 import mongoose from 'mongoose';
 
 const directorSchema = new mongoose.Schema({
-  name: { 
-    type: String, 
-    required: true 
-},
+
+  director_id: {
+      type: mongoose.Schema.ObjectId,
+      ref: "director",
+      required: true
+  },
+  name: {
+      type: String,
+      required: true 
+  }
 
 });
 
