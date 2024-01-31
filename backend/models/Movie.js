@@ -28,6 +28,10 @@ const movieSchema = new mongoose.Schema({
 
 });
 
+movieSchema.index({title: 1}) // this is for creating an index 
+//which is a folder that will only show you the titles
+movieSchema.index({release: 1})
+movieSchema.index({genre: 1})
 
 //const Movie = mongoose.model('Movie', movieSchema);
 
